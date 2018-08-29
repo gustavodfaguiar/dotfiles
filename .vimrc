@@ -31,7 +31,7 @@ set laststatus=2
 set cursorline
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set expandtab:q:q
 set list
 set listchars=eol:#,trail:·,tab:>·
 set t_Co=256
