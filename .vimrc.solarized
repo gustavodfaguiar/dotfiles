@@ -1,0 +1,66 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=/home/gaguiar/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'fatih/vim-go'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ctrlpvim/ctrlp.vim'
+" Plugin 'nvie/vim-flake8'
+Plugin 'flowtype/vim-flow'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" temp directories
+set backupdir=/tmp/
+set directory=/tmp/
+
+" Visual stuffs
+" set guifont=Monaco:h14
+set number
+set cursorline
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set clipboard=unnamed
+set list
+set listchars=trail:·,tab:>·
+set hlsearch
+
+" execute pathogen#infect()
+filetype plugin indent on
+
+syntax on
+set t_Co=16
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Map keys to next and prev tab
+map <Tab> :tabnext<CR>
+map <S-Tab> :tabpreviou<CR>
+
+
+" Ctrlp plugin config
+let g:ctrlp_prompt_mappings = {
+\ 'AcceptSelection("e")': ['<c-t>'],
+\ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+\ }
+let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" NerdTree plugin config
+let NERDTreeIgnore = ['\.pyc$', '__pycache', '\.egg-info', 'node_modules']
+
+" Vim Airline theme:source
+let g:airline_theme='molokai'
+let g:airline_powerline_fonts = 1
