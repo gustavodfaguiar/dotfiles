@@ -1,0 +1,29 @@
+[user]
+    email = gustavodfaguiar@gmail.com
+    name = Gustavo Aguiar
+[core]
+    editor = vim
+[push]
+    default = tracking
+    followTags = true
+[color]
+  diff = auto
+  status = auto
+[color "branch"]
+  current = cyan
+  local = green
+  remote = red
+[color "diff"]
+  meta = yellow
+  frag = magenta
+  old = red
+  new = green
+[color "status"]
+  added = cyan
+  branch = cyan
+  changed = magenta
+  deleted = red
+  untracked = yellow
+[alias]
+    graph = log --graph --pretty=format:'%C(cyan)%h %C(bold green)(%ar) %C(reset)%s' 
+    graph-all = log --graph --topo-order --decorate --oneline --all
