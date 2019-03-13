@@ -6,6 +6,9 @@
 [push]
     default = tracking
     followTags = true
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
 [color]
   diff = auto
   status = auto
