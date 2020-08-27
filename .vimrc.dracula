@@ -27,6 +27,7 @@ set directory=/tmp/
 
 set number
 set hlsearch
+set incsearch " Pesquisa em tempo real
 set laststatus=2
 set cursorline
 set tabstop=4
