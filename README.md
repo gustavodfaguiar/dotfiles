@@ -1,7 +1,7 @@
 # Dotfiles
 
 
-my settings
+My settings
 
 ## setup init
 
